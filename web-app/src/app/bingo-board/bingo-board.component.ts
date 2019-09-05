@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { BingoBoardService } from './../services/bingo-board.service';
-import { MatGridListModule } from '@angular/material/grid-list';
+
+
 
 
 @Component({
