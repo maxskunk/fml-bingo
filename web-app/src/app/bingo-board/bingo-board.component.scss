@@ -1,0 +1,32 @@
+:host {
+  font-size: 41px;
+  font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1,
+th {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 2px #666 solid;
+  text-align: center;
+  width: 20%;
+  height: 100px;
+  width: 100px;
+}
+
+#free,
+.pickedBG {
+  background-color: green;
+}
