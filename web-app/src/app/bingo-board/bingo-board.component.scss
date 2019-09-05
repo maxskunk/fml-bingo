@@ -1,11 +1,15 @@
-:host {
-  font-size: 41px;
-  font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+table {
+  background-color: white;
+  border-radius: 18px;
+
+  .bingo_head>th {
+    background-color: #c89f60;
+  }
 }
 
 h1,
 th {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  //   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 h1 {
@@ -13,7 +17,10 @@ h1 {
 }
 
 table {
+  margin: auto;
   border-collapse: collapse;
+  //   separate !important;
+  width: 90%;
 }
 
 th,
@@ -21,9 +28,11 @@ td {
   padding: 10px;
   border: 2px #666 solid;
   text-align: center;
-  width: 20%;
-  height: 100px;
-  width: 100px;
+  // height: 200px;
+  // width: 200px;
+  // width: 20%;
+  // height: calc(width*1); //   height: 100px;
+  //   width: 100px;
 }
 
 #free,

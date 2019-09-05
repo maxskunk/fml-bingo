@@ -1,45 +1,101 @@
 <h1>FML</h1>
 <table>
-  <tr>
+  <tr class="bingo_head">
     <th>B</th>
     <th>I</th>
     <th>N</th>
     <th>G</th>
     <th>O</th>
   </tr>
-  <tr>
-    <td id="square0">&nbsp;</td>
-    <td id="square5">&nbsp;</td>
-    <td id="square10">&nbsp;</td>
-    <td id="square14">&nbsp;</td>
-    <td id="square19">&nbsp;</td>
+  <!-- {{container.offsetWidth}} -->
+  <tr #container>
+    <td [style.height.px]="cell_height" [style.width.px]="cell_height" id="square0">
+      <app-bingo-cell [cellData]="boardData" cellIndex="0"></app-bingo-cell>
+    </td>
+    <td id="square5">
+      <app-bingo-cell [cellData]="boardData" cellIndex="1"></app-bingo-cell>
+    </td>
+    <td id="square10">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square14">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square19">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
   </tr>
   <tr>
-    <td id="square1">&nbsp;</td>
-    <td id="square6">&nbsp;</td>
-    <td id="square11">&nbsp;</td>
-    <td id="square15">&nbsp;</td>
-    <td id="square20">&nbsp;</td>
+    <td id="square1">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square6">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square11">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square15">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square20">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
   </tr>
   <tr>
-    <td id="square2">&nbsp;</td>
-    <td id="square7">&nbsp;</td>
+    <td id="square2">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square7">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
     <td id="free">Free</td>
-    <td id="square16">&nbsp;</td>
-    <td id="square21">&nbsp;</td>
+    <td id="square16">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square21">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
   </tr>
   <tr>
-    <td id="square3">&nbsp;</td>
-    <td id="square8">&nbsp;</td>
-    <td id="square12">&nbsp;</td>
-    <td id="square17">&nbsp;</td>
-    <td id="square22">&nbsp;</td>
+    <td id="square3">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square8">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square12">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square17">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square22">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
   </tr>
   <tr>
-    <td id="square4">&nbsp;</td>
-    <td id="square9">&nbsp;</td>
-    <td id="square13">&nbsp;</td>
-    <td id="square18">&nbsp;</td>
-    <td id="square23">&nbsp;</td>
+    <td id="square4">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square9">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square13">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square18">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
+    <td id="square23">
+      <app-bingo-cell></app-bingo-cell>
+    </td>
   </tr>
 </table>
+
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>1</mat-grid-tile>
+  <mat-grid-tile>2</mat-grid-tile>
+  <mat-grid-tile>3</mat-grid-tile>
+  <mat-grid-tile>4</mat-grid-tile>
+</mat-grid-list>

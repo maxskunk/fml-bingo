@@ -5,6 +5,7 @@ import { tap, delay } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
+
 export class BingoBoardService {
   private data = {
     "board_cells": [
