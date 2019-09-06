@@ -11,10 +11,6 @@ import { BingoBoardService } from './../services/bingo-board.service';
 })
 export class BingoBoardComponent implements OnInit {
 
-  @HostListener('window:resize', ['$event.target'])
-  onResize() {
-    this.resizeWorks();
-  }
 
   @ViewChild('container') myBoardContainer: ElementRef;
 
@@ -32,9 +28,5 @@ export class BingoBoardComponent implements OnInit {
     })
   }
 
-  resizeWorks() {
-    console.log("RESIZE: " + this.myBoardContainer.nativeElement.offsetWidth);
-    this.cell_height = this.myBoardContainer.nativeElement.offsetWidth / 5;
-  }
 
 }

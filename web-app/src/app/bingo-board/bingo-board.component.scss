@@ -1,18 +1,29 @@
-table {
-  background-color: white;
-  border-radius: 18px;
 
-  .bingo_head>th {
-    background-color: #c89f60;
-  }
+
+mat-grid-tile {
+
+  background-color: white;
+  border: solid 2px #000;
+}
+
+#free_space {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 20px;
+  background: lightgreen;
+}
+
+.head_cell {
+  background: lightblue;
+  font-weight: bolder;
 }
 
 mat-grid-list {
-  background-color: white;
-  margin: auto;
+  // background-color: white;
+  // margin: auto;
   // border-collapse: collapse;
   //   separate !important;
-  width: 90%;
+  // width: 90%;
 }
 
 h1,
@@ -24,26 +35,3 @@ h1 {
   font-size: 28px;
 }
 
-table {
-  margin: auto;
-  border-collapse: collapse;
-  //   separate !important;
-  width: 90%;
-}
-
-th,
-td {
-  padding: 10px;
-  border: 2px #666 solid;
-  text-align: center;
-  // height: 200px;
-  // width: 200px;
-  // width: 20%;
-  // height: calc(width*1); //   height: 100px;
-  //   width: 100px;
-}
-
-#free,
-.pickedBG {
-  background-color: green;
-}

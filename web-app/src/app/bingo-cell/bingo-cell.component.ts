@@ -13,7 +13,7 @@ export class BingoCellComponent implements OnInit {
   public set cellData(value: Object) {
     if (value && this.cellIndex) {
       const obj = value["board_cells"][this.cellIndex];
-      this.label = obj.label;
+      this.label = obj? obj.label : "";
 
       this._cellData = value;
     }

@@ -1,37 +1,87 @@
 <h1>FML</h1>
 <mat-grid-list cols="5" rowHeight="1:1">
-  <mat-grid-tile>B</mat-grid-tile>
-  <mat-grid-tile>I</mat-grid-tile>
-  <mat-grid-tile>N</mat-grid-tile>
-  <mat-grid-tile>G</mat-grid-tile>
-  <mat-grid-tile>O</mat-grid-tile>
-  <mat-grid-tile>1</mat-grid-tile>
-  <mat-grid-tile>2</mat-grid-tile>
-  <mat-grid-tile>3</mat-grid-tile>
-  <mat-grid-tile>4</mat-grid-tile>
-  <mat-grid-tile>5</mat-grid-tile>
-  <mat-grid-tile>1</mat-grid-tile>
-  <mat-grid-tile>2</mat-grid-tile>
-  <mat-grid-tile>3</mat-grid-tile>
-  <mat-grid-tile>4</mat-grid-tile>
-  <mat-grid-tile>5</mat-grid-tile>
-  <mat-grid-tile>1</mat-grid-tile>
-  <mat-grid-tile>2</mat-grid-tile>
-  <mat-grid-tile>3</mat-grid-tile>
-  <mat-grid-tile>4</mat-grid-tile>
-  <mat-grid-tile>5</mat-grid-tile>
-  <mat-grid-tile>1</mat-grid-tile>
-  <mat-grid-tile>2</mat-grid-tile>
-  <mat-grid-tile>3</mat-grid-tile>
-  <mat-grid-tile>4</mat-grid-tile>
-  <mat-grid-tile>5</mat-grid-tile>
-  <mat-grid-tile>1</mat-grid-tile>
-  <mat-grid-tile>2</mat-grid-tile>
-  <mat-grid-tile>3</mat-grid-tile>
-  <mat-grid-tile>4</mat-grid-tile>
-  <mat-grid-tile>5</mat-grid-tile>
+  <mat-grid-tile class="head_cell">B</mat-grid-tile>
+  <mat-grid-tile class="head_cell">I</mat-grid-tile>
+  <mat-grid-tile class="head_cell">N</mat-grid-tile>
+  <mat-grid-tile class="head_cell">G</mat-grid-tile>
+  <mat-grid-tile class="head_cell">O</mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="0"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="1"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="2"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="3"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="4"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="5"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="6"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="7"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="8"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="9"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="10"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="11"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile id="free_space">
+     Free Space
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="12"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="13"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="14"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="15"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="16"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="17"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="18"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="19"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="20"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="21"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="22"></app-bingo-cell>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-bingo-cell [cellData]="boardData" cellIndex="23"></app-bingo-cell>
+  </mat-grid-tile>
 </mat-grid-list>
-<table>
+<!-- <table>
   <tr class="bingo_head">
     <th>B</th>
     <th>I</th>
@@ -39,7 +89,7 @@
     <th>G</th>
     <th>O</th>
   </tr>
-  <!-- {{container.offsetWidth}} -->
+
   <tr #container>
     <td [style.height.px]="cell_height" [style.width.px]="cell_height" id="square0">
       <app-bingo-cell [cellData]="boardData" cellIndex="0"></app-bingo-cell>
@@ -123,4 +173,4 @@
       <app-bingo-cell></app-bingo-cell>
     </td>
   </tr>
-</table>
+</table> -->
