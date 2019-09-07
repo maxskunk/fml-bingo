@@ -59,7 +59,7 @@ export class BingoBoardService {
       },
       {
         "label": "12",
-        "selected": false,
+        "selected": true,
       },
       {
         "label": "13",

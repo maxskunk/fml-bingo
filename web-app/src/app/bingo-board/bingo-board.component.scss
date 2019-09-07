@@ -1,9 +1,15 @@
-
-
 mat-grid-tile {
 
   background-color: white;
   border: solid 2px #000;
+
+  .selected {
+    position: absolute;
+    color: red;
+    opacity: .75;
+    font-size: 60px;
+    font-weight: bolder;
+  }
 }
 
 #free_space {
@@ -20,10 +26,11 @@ mat-grid-tile {
 
 mat-grid-list {
   // background-color: white;
-  // margin: auto;
+  margin: auto;
   // border-collapse: collapse;
   //   separate !important;
   // width: 90%;
+  max-width: 600px;
 }
 
 h1,
@@ -34,4 +41,3 @@ th {
 h1 {
   font-size: 28px;
 }
-

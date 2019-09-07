@@ -8,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class BingoCellComponent implements OnInit {
 
   constructor() { }
+
+  public selected = false;
   private _cellData: Object;
   @Input()
   public set cellData(value: Object) {
