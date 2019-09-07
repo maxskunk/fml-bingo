@@ -10,99 +10,99 @@ export class BingoBoardService {
   private data = {
     "board_cells": [
       {
-        "label": "Sis: One Sided Convo",
+        "label": "0",
         "selected": true,
       },
       {
-        "label": "Lilly Needs a Diet",
+        "label": "1",
         "selected": false,
       },
       {
-        "label": "Dad Falls Asleep In Chair",
+        "label": "2",
         "selected": false,
       },
       {
-        "label": "Max or Lilly Get 'One Up-ed'",
+        "label": "3",
         "selected": false,
       },
       {
-        "label": "Mom Shows Project",
+        "label": "4",
         "selected": false,
       },
       {
-        "label": "Mention of FOX News",
+        "label": "5",
         "selected": false,
       },
       {
-        "label": "Family Refuses Food Suggestion",
+        "label": "6",
         "selected": false,
       },
       {
-        "label": "When are You Getting Married?",
+        "label": "7",
         "selected": false,
       },
       {
-        "label": "Dad Randomy chewing on cheek",
+        "label": "8",
         "selected": false,
       },
       {
-        "label": "Aggressive Competitiveness",
+        "label": "9",
         "selected": false,
       },
       {
-        "label": "Pro-Trump Comments",
+        "label": "10",
         "selected": false,
       },
       {
-        "label": "Complain about Max's Driving",
+        "label": "11",
         "selected": false,
       },
       {
-        "label": "Dad: 'Where is My Mobile Device?'",
+        "label": "12",
         "selected": false,
       },
       {
-        "label": "Family Adds to Our Clutter",
+        "label": "13",
         "selected": false,
       },
       {
-        "label": "Making Disgusting Bodily Noises",
+        "label": "14",
         "selected": false,
       },
       {
-        "label": "Mom Snaps at Dad",
+        "label": "15",
         "selected": false,
       },
       {
-        "label": "When are You Having Kids?",
+        "label": "16",
         "selected": false,
       },
       {
-        "label": "Eccentric Hoarder Project",
+        "label": "17",
         "selected": false,
       },
       {
-        "label": "Quilt Guild Drama",
+        "label": "18",
         "selected": false,
       },
       {
-        "label": "Family Refuses Activity Suggestion",
+        "label": "19",
         "selected": false,
       },
       {
-        "label": "Burgers 2 Meals in A Row",
+        "label": "20",
         "selected": false,
       },
       {
-        "label": "Dad Asserting How Smart He Is",
+        "label": "21",
         "selected": false,
       },
       {
-        "label": "Extremly Exaggerated Story",
+        "label": "22",
         "selected": false,
       },
       {
-        "label": "Global Warming is Fake",
+        "label": "23",
         "selected": false,
       },
     ]
