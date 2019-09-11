@@ -52,7 +52,7 @@ export class BingoBoardComponent implements OnInit {
   }
   generateBoard() {
     this.layoutOrder = this.shuffleTiles();
-    this.bbserv.getBoardData("family_visit").subscribe((res) => {
+    this.bbserv.getBoardData("parent_board").subscribe((res) => {
       let tempData = [];
       this.layoutOrder.forEach((tile_num) => {
 
