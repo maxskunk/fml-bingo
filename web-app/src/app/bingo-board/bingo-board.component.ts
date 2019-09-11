@@ -52,10 +52,11 @@ export class BingoBoardComponent implements OnInit {
   }
   generateBoard() {
     this.layoutOrder = this.shuffleTiles();
-    this.bbserv.getBoardData("SomeKey").subscribe((res) => {
+    this.bbserv.getBoardData("family_visit").subscribe((res) => {
       let tempData = [];
       this.layoutOrder.forEach((tile_num) => {
-        tempData.push(res.board_cells[tile_num]);
+
+        tempData.push(res.data[tile_num]);
       });
       this.boardData = tempData;
     }, (err) => {

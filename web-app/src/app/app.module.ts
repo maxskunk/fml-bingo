@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// HttpClient module for RESTful API
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
@@ -26,6 +28,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatGridListModule,
     BrowserAnimationsModule,
     BrowserModule,
+    HttpClientModule,
 
   ],
   providers: [BingoBoardService],
